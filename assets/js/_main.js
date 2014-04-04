@@ -23,12 +23,13 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+      $('.test').hide();
     }
   },
   // Home page
   home: {
     init: function() {
-      // JavaScript to be fired on the home page
+      
     }
   },
   // About us page, note the change from about-us to about_us.
@@ -58,6 +59,6 @@ var UTIL = {
   }
 };
 
-$(document).ready(UTIL.loadEvents);
+$(document).ready(function(){$('.test').hide();});
 
 })(jQuery); // Fully reference jQuery after this point.
